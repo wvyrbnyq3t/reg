@@ -247,13 +247,14 @@ html {
 .pcColumn-wrap {
   display: grid;
   gap: 0.8rem;
-
+  
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .column-wrap {
+  align-items: center;
   display: grid;
   gap: 0.8rem;
   grid-template-columns: repeat(2, 1fr);
@@ -550,9 +551,10 @@ body.is-modal {
   margin: 0 auto;
   position: relative;
   z-index: 0;
-
+  
   main {
     box-shadow: 0 0 0.1rem #333;
+    min-height: 100dvh;
     padding: 1.6rem;
 
     section {
@@ -573,7 +575,6 @@ body.is-modal {
 .form-textarea {
   border: 0.1rem solid var(--c-gray);
   border-radius: 0.4rem;
-  cursor: pointer;
   display: block;
   padding: 0.8rem !important;
   width: 100%;

@@ -1,0 +1,11 @@
+main {
+  > * {
+    margin-bottom: 1.6rem;
+
+    section {
+      > *{
+        margin-bottom: .8rem !important;
+      }
+    }
+  }
+}
