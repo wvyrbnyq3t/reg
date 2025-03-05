@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Material Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pageContent">
+      <main>
+        <h1 class="fs-large">正規表現ジェネレーター</h1>
+        <section>
+          <h2 class="fs-medium">オプション</h2>
+          <div class="column-wrap">
+            <p class="fs-normal">先頭の文字</p>
+            <input type="text" name="prefix" id="prefix" class="form-input">
+          </div>
+          <div class="column-wrap">
+            <p class="fs-normal">ビット数</p>
+            <input type="number" name="bit" id="bit" class="form-input" value="1" min="1">
+          </div>
+        </section>
+        <section>
+          <div class="column-wrap">
+            <button type="button" class="btn-secondary w-100" id="btnClip">コピー</button>            
+            <button type="button" class="btn-primary w-100" id="btnGenerate">生成する</button>
+          </div>
+          <p class="fs-medium" id="regResult"></p>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
