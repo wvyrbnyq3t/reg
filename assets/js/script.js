@@ -36,3 +36,11 @@ btnClip.addEventListener("click", () => {
   navigator.clipboard.writeText(regResult.innerText);
   alert("Copied to clipboard!");
 });
+
+// 除外する
+const btnAddExclusion = document.getElementById("btnAddExclusion");
+btnAddExclusion.addEventListener("click", () => {
+  const exclusions = (document.getElementById("exclusion").value).split(",");
+  history.push(...exclusions);
+  console.log(history);
+})
